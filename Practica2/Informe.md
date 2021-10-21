@@ -89,13 +89,13 @@ node hello/hello.js
 Una vez ejecutemos el ultimo comando el servidor express-start empezara a escuchar por el puerto 3000:
 
 <kbd>
-  <img src="img/cap1.png">
+  <img src="https://github.com/EindhovenLion99/SyTW/blob/master/Practica2/img/cap1.png?raw=true">
 </kbd>
 
 Ahora entrariamos en el navegador a la direccion IP de la maquina proxy y nos deberia desplegar la aplicacion express-start que se esta ejecutando en el backend:
 
 <kbd>
-  <img src="img/cap2.png">
+  <img src="https://github.com/EindhovenLion99/SyTW/blob/master/Practica2/img/cap2.png?raw=true">
 </kbd>
 
 ## Configuración del servidor de base de datos con MongoDB
@@ -120,7 +120,7 @@ sudo systemctl status mongod
 ```
 
 <kbd>
-  <img src="img/cap3.png">
+  <img src="https://github.com/EindhovenLion99/SyTW/blob/master/Practica2/img/cap3.png?raw=true">
 </kbd>
 
 Configuramos el usuario root en MongoDB
@@ -141,7 +141,7 @@ sudo nano /etc/mongod.conf
 El fichero quedaria asi:
 
 <kbd>
-  <img src="img/cap4.png">
+  <img src="https://github.com/EindhovenLion99/SyTW/blob/master/Practica2/img/cap4.png?raw=true">
 </kbd>
 
 Tendremos que añadir la IP de la propia maquina para poder acceder desde Backend al MongoDB de esta maquina. Tambien tendremos que activar la opcion en *security* con *authorization: 'enabled'*.
@@ -207,7 +207,7 @@ sudo systemctl status nfs-server
 ```
 
 <kbd>
-  <img src="img/cap5.png">
+  <img src="https://github.com/EindhovenLion99/SyTW/blob/master/Practica2/img/cap5.png?raw=true">
 </kbd>
 
 Una vez tenemos configurado nfs en la maquina base de datos, vamos a configurar nfs en la maquina backend para poder montar la unidad ```public```.
@@ -237,7 +237,7 @@ sudo nano /etc/fstab
 Ahora podremos acceder a la carpeta ````public```` y añadir archivos desde el backend.
 
 <kbd>
-  <img src="img/cap6.png">
+  <img src="https://github.com/EindhovenLion99/SyTW/blob/master/Practica2/img/cap6.png?raw=true">
 </kbd>
 
 ## Desplegar en el backend una aplicacion MEAN de prueba
@@ -296,7 +296,7 @@ sudo ./run.sh init
 ```
 
 <kbd>
-  <img src="img/cap7.png">
+  <img src="https://github.com/EindhovenLion99/SyTW/blob/master/Practica2/img/cap7.png?raw=true">
 </kbd>
 
 
@@ -308,13 +308,13 @@ sudo ./run.sh start
 ```
 
 <kbd>
-  <img src="img/cap8.png">
+  <img src="https://github.com/EindhovenLion99/SyTW/blob/master/Practica2/img/cap8.png?raw=true">
 </kbd>
 
 Vemos que la aplicacion ya esta lanzada, solo nos quedaria entrar a la direccion IP de la proxy en el navegador:
 
 <kbd>
-  <img src="img/cap9.png">
+  <img src="https://github.com/EindhovenLion99/SyTW/blob/master/Practica2/img/cap9.png?raw=true">
 </kbd>
 
 La aplicacion web ya estaria lanzada de forma indefinida, en caso de querer para el servicio tenemos que ejecutar el script con la opcion *stop*:
